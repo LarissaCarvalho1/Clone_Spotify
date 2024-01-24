@@ -1,8 +1,12 @@
 @import url(variaveis.css);
+@import url(main-content.css);
+
+* {
+    font-family: var(--font-dm-sans);
+}
 
 body {
-    background: #000;
-    font-family: var(--font-dm-sans);
+    background: var(--text-base-dark);
 }
 
 .sidebar {
@@ -15,13 +19,13 @@ body {
 }
 
 .sidebar__navigation {
-    background: #121212;
+    background: var(--bg-container);
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
 
 .sidebar__navigation .logo {
-    background: #121212;
+    background: var(--bg-container);
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -41,20 +45,20 @@ body {
 }
 
 .sidebar nav ul li a {
-    color: #b3b3b3;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
 }
 
 .library {
-    background: #121212;
+    background: var(--bg-container);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 4px 8px;
-    color: #b3b3b3;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
@@ -69,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     margin-right: 10px;
-    color: #b3b3b3;
+    color: var(--text-color);
     background: transparent;
     border: none;
     font-size: 1rem;
@@ -78,7 +82,6 @@ body {
     text-decoration: none;
     text-transform: none;
     padding: 20px 10px;
-    font-family: var(--font-dm-sans);
 }
 
 .library .library__button .fa {
@@ -98,7 +101,7 @@ body {
     justify-content: space-between;
     gap: 20px;
     background: #242424;
-    color: #b3b3b3;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0;
@@ -113,7 +116,7 @@ body {
 
 .section__playlist__content .text {
     padding-bottom: 14px;
-    color: #fff;
+    color: var(--text-base-light);
 }
 
 .section__playlist__content .title {
@@ -128,8 +131,8 @@ body {
 .section__playlist__content .section__playlist__button {
     display: flex;
     justify-content: center;
-    background: #fff;
-    color: #000;
+    background: var(--text-base-light);
+    color: var(--text-base-dark);
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -143,11 +146,10 @@ body {
 
 .sidebar .cookies {
     margin: 25px 20px;
-
 }
 
 .sidebar .cookies a {
-    color: #b3b3b3;
+    color: var(--text-color);
     font-weight: 500;
     font-size: 10px;
     text-decoration: none;
@@ -161,7 +163,7 @@ body {
     background: transparent;
     border: 1px solid #878787;
     border-radius: 20px;
-    color: #fff;
+    color: var(--text-base-light);
     font-weight: bold;
     cursor: pointer;
     align-items: center;
@@ -188,7 +190,7 @@ body {
 }
 
 .disclaimer-premium .disclaimer-premium__title {
-    color: #fff;
+    color: var(--text-base-light);
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
@@ -196,14 +198,14 @@ body {
 }
 
 .disclaimer-premium .disclaimer-premium__subtitle {
-    color: #fff;
+    color: var(--text-base-light);
     font-size: 14px;
     font-weight: 500;
 } 
 
 .disclaimer-premium button {
-    background: #fff;
-    color: #000;
+    background: var(--text-base-light);
+    color: var(--text-base-dark);
     font-size: 16px;
     font-weight: bold;
     padding: 14px 30px;
