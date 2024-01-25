@@ -1,18 +1,17 @@
 .main-container {
-    max-width: 800vw;
-    height: 100vh;
-    margin-left: 320px; /*Joga pra direita*/
-    margin-right: 56px;
+    max-width: 80rem;
+    margin-left: 20rem;
+    margin-right: 3.5rem;
 }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    margin: 10px;
-    border-radius: 8px;
-    background: var(--bg-container);
+    padding: 0.625rem;
+    margin: 12px 0 10px 0;
+    border-radius: 0.5rem;
+    background-color: #121212;
 }
 
 .header__navigation .navigation {
@@ -22,49 +21,54 @@
 }
 
 .header__navigation .navigation .arrow-left {
-    margin-right: 1.25rem;
+    margin-right: 0.9375rem;
 }
 
-.arrow-left,  .arrow-right {
+.arrow-left,
+.arrow-right {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     background: var(--bg-icon);
-    background-color: var(--bg-arrow-color);
-    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
+    border: none;
     cursor: pointer;
 }
 
 .header__search {
     display: flex;
     align-items: center;
-    width: 364px;
-    height: 48px;
-    margin-left: 8px;
-    background: #242424;
-    border-radius: 500px;
-    border: 1px solid transparent;
+    width: 22.75rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+    border: transparent;
+    background-color: #242424;
+    border-radius: 31.25rem;
+    border: 0.0625rem solid transparent;
 }
 
 .header__search img {
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1.25rem;
 }
 
 .header__search input {
     background: transparent;
     border: none;
-    padding: 5px 10px;
+    padding: 0 6.25rem 0 0.75rem;
     width: 83%;
     color: var(--text-base-light);
     font-size: 15px;
-    text-overflow: ellipsis; /*Não mostra o texto todo nem quebra o que esta sendo escrito, pois aparece os três pontinhis(...)*/
-    overflow: hidden; /*Auxilia o text-overflow*/
-    white-space: nowrap; /*Deixa o texto em uma linha só*/
+    text-overflow: ellipsis;
+    /*Não mostra o texto todo nem quebra o que esta sendo escrito, pois aparece os três pontinhis(...)*/
+    overflow: hidden;
+    /*Auxilia o text-overflow*/
+    white-space: nowrap;
+    /*Deixa o texto em uma linha só*/
     outline: none;
 }
 
@@ -75,21 +79,189 @@
 
 .header__login .subscribe {
     color: var(--text-sub);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     background: transparent;
-    margin-right: 32px;
+    margin-right: 2rem;
     border: none;
     cursor: pointer;
 }
 
 .header__login .login {
-    width: 100px;
-    height: 48px;
+    width: 6.25rem;
+    height: 3rem;
     color: var(--text-base-dark);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     border: none;
     cursor: pointer;
+}
+
+.header__search:hover {
+    border: 0.0625rem solid #fff;
+    /* 1px para rem */
+}
+
+.header__login .subscribe:hover,
+.header__login .login:hover {
+    transform: scale(1.04);
+}
+
+/* PLAYLIST */
+.playlist-container {
+    max-width: 80rem;
+    height: 72vh;
+    margin-left: 20rem;
+    margin-right: 3.5rem;
+
+    padding-top: 1rem;
+    /* margin: 1.25rem;  */
+    /* 20px para rem */
+    border-radius: 0.625rem;
+    /* 10px para rem */
+    background-color: #121212;
+}
+
+.playlist {
+    margin: 3rem;
+}
+
+.playlist #greeting {
+    color: var(--text-base-light);
+    font-size: 2rem;
+    /* 32px para rem */
+    font-weight: 700;
+    margin-bottom: 3rem;
+    /* 48px para rem */
+}
+
+.playlist .session {
+    color: var(--text-base-light);
+    font-size: 1.5rem;
+    /* 24px para rem */
+    font-weight: 700;
+}
+
+/* SCROLL */
+.offer__scroll-container {
+    max-height: 52vh;
+    margin: 3rem;
+    /* 24px para rem */
+    overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+    width: 0.0625rem;
+    /* 1px para rem */
+}
+
+/* Thumb */
+.offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* FIM SCROLL */
+
+.offer__list-item {
+    display: grid;
+    /* define o modelo de layout do elemento como uma grade */
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* número de colunas na grade e a largura de cada coluna */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    position: relative;
+    width: 13.75rem;
+    /* 220px para rem */
+    height: 12.5rem;
+    /* 200px para rem */
+    overflow: hidden;
+    border-radius: 0.5rem;
+    /* 8px para rem */
+}
+
+.cards span {
+    padding: 1rem;
+    /* 16px para rem */
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 1.5rem;
+    /* 24px para rem */
+    font-weight: 700;
+}
+
+.cards img {
+    width: 60%;
+    position: absolute;
+    top: 70%;
+    right: -10%;
+    transform: translateY(-50%) rotate(20deg);
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/* COLOR CARDS */
+.card1 {
+    background: var(--card1);
+}
+
+.card2 {
+    background: var(--card2);
+}
+
+.card3 {
+    background: var(--card3);
+}
+
+.card4 {
+    background: var(--card4);
+}
+
+.card5 {
+    background: var(--card5);
+}
+
+.card6 {
+    background: var(--card6);
+}
+
+.card7 {
+    background: var(--card7);
+}
+
+.card8 {
+    background: var(--card8);
+}
+
+.card9 {
+    background: var(--card9);
+}
+
+.card10 {
+    background: var(--card10);
+}
+
+.card11 {
+    background: var(--card11);
+}
+
+.card12 {
+    background: var(--card12);
+}
+
+.card13 {
+    background: var(--card13);
+}
+
+.card14 {
+    background: var(--card14);
+}
+
+.card15 {
+    background: var(--card15);
 }
