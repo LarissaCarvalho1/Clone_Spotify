@@ -1,6 +1,6 @@
 @import url(variaveis.css);
 @import url(main-content.css);
-
+@import url(media-queries.css);
 
 * {
     font-family: var(--font-dm-sans);
