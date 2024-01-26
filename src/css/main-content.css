@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.625rem;
-    margin: 12px 0 10px 0;
+    margin: 0.75rem 0 0.625rem 0;
     border-radius: 0.5rem;
     background-color: #121212;
 }
@@ -62,13 +62,10 @@
     padding: 0 6.25rem 0 0.75rem;
     width: 83%;
     color: var(--text-base-light);
-    font-size: 15px;
-    text-overflow: ellipsis;
-    /*Não mostra o texto todo nem quebra o que esta sendo escrito, pois aparece os três pontinhos(...)*/
-    overflow: hidden;
-    /*Auxilia o text-overflow*/
-    white-space: nowrap;
-    /*Deixa o texto em uma linha só*/
+    font-size: 0.9375rem;
+    text-overflow: ellipsis; /*Não mostra o texto todo nem quebra o que esta sendo escrito, pois aparece os três pontinhos(...)*/
+    overflow: hidden; /*Auxilia o text-overflow*/
+    white-space: nowrap; /*Deixa o texto em uma linha só*/
     outline: none;
 }
 
@@ -100,7 +97,6 @@
 
 .header__search:hover {
     border: 0.0625rem solid #fff;
-    /* 1px para rem */
 }
 
 .header__login .subscribe:hover,
@@ -116,10 +112,7 @@
     margin-right: 3.5rem;
 
     padding-top: 1rem;
-    /* margin: 1.25rem;  */
-    /* 20px para rem */
     border-radius: 0.625rem;
-    /* 10px para rem */
     background-color: #121212;
 }
 
@@ -130,16 +123,13 @@
 .playlist #greeting {
     color: var(--text-base-light);
     font-size: 2rem;
-    /* 32px para rem */
     font-weight: 700;
     margin-bottom: 3rem;
-    /* 48px para rem */
 }
 
 .playlist .session {
     color: var(--text-base-light);
     font-size: 1.5rem;
-    /* 24px para rem */
     font-weight: 700;
 }
 
@@ -147,13 +137,11 @@
 .offer__scroll-container {
     max-height: 52vh;
     margin: 3rem;
-    /* 24px para rem */
     overflow-y: auto;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
     width: 0.0625rem;
-    /* 1px para rem */
 }
 
 /* Thumb */
@@ -163,11 +151,9 @@
 
 /* FIM SCROLL */
 .offer__list-item {
-    display: grid;
-    /* define o modelo de layout do elemento como uma grade */
+    display: grid; /* define o modelo de layout do elemento como uma grade */
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /* número de colunas na grade e a largura de cada coluna */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* número de colunas na grade e a largura de cada coluna */
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -175,21 +161,16 @@
 .cards {
     position: relative;
     width: 13.75rem;
-    /* 220px para rem */
     height: 12.5rem;
-    /* 200px para rem */
     overflow: hidden;
     border-radius: 0.5rem;
-    /* 8px para rem */
 }
 
 .cards span {
     padding: 1rem;
-    /* 16px para rem */
     position: absolute;
     color: var(--text-base-light);
     font-size: 1.5rem;
-    /* 24px para rem */
     font-weight: 700;
 }
 
@@ -284,11 +265,11 @@
 
 .artist-card {
     background: #181818;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     -ms-flex: 1;
     flex: 1;
     isolation: isolate;
-    padding: 16px;
+    padding: 1rem;
     position: relative;
     transition: background-color 0.3s ease;
     width: 20%;
@@ -303,7 +284,7 @@
     padding-bottom: 100%;
     position: relative;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .artist-img {
@@ -322,7 +303,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-height: 62px;
+    min-height: 3.875rem;
 }
 
 .card-text a {
@@ -334,9 +315,9 @@
 .artist-name {
     box-sizing: border-box;
     margin-block: 0px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    padding-block-end: 8px;
+    padding-block-end: 0.5rem;
 }
 
 .artist-categorie {
@@ -351,12 +332,12 @@
 
 .play .fa-play {
     position: absolute;
-    right: 10px;
-    top: 120px;
-    padding: 18px;
+    right: 0.625rem;
+    top: 7.5rem;
+    padding: 1.125rem;
     background-color: #1db954;
     border-radius: 100%;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 0;
     transition: all ease 0.4s;
 }
@@ -367,12 +348,12 @@
 }
 
 .play .fa-play:hover {
-    padding: 20px;
+    padding: 1.25rem;
     cursor: pointer;
 }
 
 #result-artist {
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
 }
 
 /* FIM CARD ARTISTA */
