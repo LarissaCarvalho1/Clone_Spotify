@@ -117,14 +117,14 @@
 }
 
 .playlist {
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .playlist #greeting {
     color: var(--text-base-light);
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 0.625rem;
 }
 
 .playlist .session {
