@@ -10,3 +10,14 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+@media screen and (max-width: 849px) {
+
+    .header__search{
+        display: none;
+    }
+
+    .offer__list-item {
+        grid-template-columns: 1fr;
+    }
+}
