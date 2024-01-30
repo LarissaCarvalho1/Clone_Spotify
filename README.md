@@ -3,6 +3,6 @@ O projeto foi desenvolvido durante a "Imersão Front-End Alura", na qual foram a
 E, por meio do clone do Spotify, pude explorar e reforçar alguns desses conceitos.
 ##
 
-<h2> 👩‍💻 <a href="https://spotify-alpha-mocha.vercel.app/">Acesse o projeto aqui.</a></h2> 
+<h2> 👩‍💻 <a href="https://spotify-alpha-mocha.vercel.app/" target="_blank">Acesse o projeto aqui.</a></h2> 
 
-<a href="https://spotify-alpha-mocha.vercel.app/"><img src="src/assets/Spotify.png"></a> 
+<a href="https://spotify-alpha-mocha.vercel.app/" target="_blank"><img src="src/assets/Spotify.png"></a> 
